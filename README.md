@@ -8,6 +8,9 @@ chmod +x nockinstall.sh
  ```
 
 # BUAT SCREEN
+
+buat screen untuk memulai mining
+
 untuk leader 
 
 ```bash
@@ -41,6 +44,9 @@ sudo chmod 600 /swapfile
 sudo mkswap /swapfile
 sudo swapon /swapfile
  ```
+
+mulai ulang step ke 1
+
 # SELAMAT MINING
 
 https://x.com/diva_hashimoto
