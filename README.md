@@ -6,6 +6,8 @@ cd nock
 chmod +x nockinstall.sh
 ./nockinstall.sh
  ```
+tunggu sampai selesai!!
+
 
 # BUAT SCREEN
 
