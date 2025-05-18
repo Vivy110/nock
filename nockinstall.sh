@@ -49,15 +49,14 @@ fi
 SEED_OUTPUT=$($WALLET_CMD keygen)
 echo "$SEED_OUTPUT"
 
-SEED_PHRASE=$(echo "$SEED_OUTPUT" | grep -iE "seed phrase" | sed 's/.*: //')
+SEED_PHRASE=$(echo "$SEED_OUTPUT" | grep -iE "mnemonic" | sed 's/.*: //')
 if [ -z "$SEED_PHRASE" ]; then
-  echo "❌ Gagal mengambil seed phrase."
-  exit 1
+  echo "❌ Gagal mengambil mnemonic."
 fi
 
-echo -e "\n🧠 Seed Phrase: $SEED_PHRASE"
+echo -e "\n🧠 mnemonic: $SEED_PHRASE"
 
-echo -e "\n🔑 Menghasilkan master private key dari seed phrase..."
+echo -e "\n🔑 Menghasilkan master private key dari mnemonic..."
 MASTER_PRIVKEY=$($WALLET_CMD gen-master-privkey --seedphrase "$SEED_PHRASE" | grep -i "master private key" | awk '{print $NF}')
 echo "Master Private Key: $MASTER_PRIVKEY"
 
@@ -65,8 +64,7 @@ MASTER_PUBKEY=$($WALLET_CMD gen-master-pubkey --master-privkey "$MASTER_PRIVKEY"
 echo "Master Public Key: $MASTER_PUBKEY"
 
 if [ -z "$MASTER_PRIVKEY" ] || [ -z "$MASTER_PUBKEY" ]; then
-  echo "❌ Gagal menghasilkan key dari seed phrase."
-  exit 1
+  echo "❌ Gagal menghasilkan key dari mnemonic."
 fi
 
 echo -e "\n📄 Menuliskan public key ke dalam Makefile untuk mining..."
