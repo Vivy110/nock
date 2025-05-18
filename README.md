@@ -61,6 +61,8 @@ sudo swapon /swapfile
 
 mulai ulang step ke 1
 
+# COMMAND UNTUK CHECK WALLET
+
 ```bash
 nockchain-wallet show-seedphrase
  ```
