@@ -3,6 +3,7 @@
  ```bash
 git clone https://github.com/Vivy110/nock.git
 cd nock
+
 chmod +x nockinstall.sh
 ./nockinstall.sh
  ```
@@ -59,6 +60,27 @@ sudo swapon /swapfile
  ```
 
 mulai ulang step ke 1
+
+```bash
+nockchain-wallet show-seedphrase
+ ```
+untuk lihat seed phrase
+
+```bash
+nockchain-wallet show-master-privkey
+```
+untuk lihat private key
+
+```bash
+nockchain-wallet show-master-pubkey
+```
+untuk lihat publik key
+
+```bash
+nockchain-wallet keygen
+```
+untuk membuat ulang privkey,pubkey,seedphrase
+
 
 # SELAMAT MINING
 
