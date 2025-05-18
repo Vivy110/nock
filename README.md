@@ -8,8 +8,17 @@ chmod +x nockinstall.sh
  ```
 tunggu sampai selesai!!
 
-simpan public key dan private key
+# simpan public key dan private key
 
+salin lalu paste public key ke Makefile
+
+ ```bash
+nano Makefile
+```
+
+export MINING_PUBKEY := (Public Key)
+
+ctrl+x y enter 
 
 # BUAT SCREEN
 
