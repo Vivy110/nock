@@ -1,5 +1,7 @@
 # CARA RUN 
 
+16GB > 6CORE 
+
  ```bash
 git clone https://github.com/Vivy110/nock.git
 cd nock
