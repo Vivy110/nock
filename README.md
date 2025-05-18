@@ -1,6 +1,8 @@
-# CARA RUN 
+SPEK VPS
+16GB RAM > 6 CORE
+LEBIH TINGGI LEBIH BAIK
 
-16GB > 6CORE 
+# CARA RUN 
 
  ```bash
 git clone https://github.com/Vivy110/nock.git
