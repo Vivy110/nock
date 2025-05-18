@@ -8,6 +8,8 @@ chmod +x nockinstall.sh
  ```
 tunggu sampai selesai!!
 
+simpan public key dan private key
+
 
 # BUAT SCREEN
 
