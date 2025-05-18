@@ -49,14 +49,14 @@ fi
 SEED_OUTPUT=$($WALLET_CMD keygen)
 echo "$SEED_OUTPUT"
 
-SEED_PHRASE=$(echo "$SEED_OUTPUT" | grep -iE "mnemonic" | sed 's/.*: //')
+SEED_PHRASE=$(echo "$SEED_OUTPUT" | grep -iE "seedphrase" | sed 's/.*: //')
 if [ -z "$SEED_PHRASE" ]; then
-  echo "❌ Gagal mengambil mnemonic."
+  echo "❌ Gagal mengambil seedphrase."
 fi
 
-echo -e "\n🧠 mnemonic: $SEED_PHRASE"
+echo -e "\n🧠 seedphrase: $SEED_PHRASE"
 
-echo -e "\n🔑 Menghasilkan master private key dari mnemonic..."
+echo -e "\n🔑 Menghasilkan master private key dari seedphrase..."
 MASTER_PRIVKEY=$($WALLET_CMD gen-master-privkey --seedphrase "$SEED_PHRASE" | grep -i "master private key" | awk '{print $NF}')
 echo "Master Private Key: $MASTER_PRIVKEY"
 
