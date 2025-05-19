@@ -2,7 +2,7 @@ SPEK VPS
 16GB RAM > 6 CORE
 LEBIH TINGGI LEBIH BAIK
 
-# CARA RUN 
+# 1 CARA RUN 
 
  ```bash
 git clone https://github.com/Vivy110/nock.git
@@ -13,9 +13,15 @@ chmod +x nockinstall.sh
  ```
 tunggu sampai selesai!!
 
-# simpan public key dan private key
+jika phrase,pkey,pubkey tidak terlihat cek step ke 5
+
+# 2 simpan public key dan private key
 
 salin lalu paste public key ke Makefile
+
+ ```bash
+cd nock/nockchain 
+```
 
  ```bash
 nano Makefile
@@ -25,7 +31,7 @@ export MINING_PUBKEY := (Public Key)
 
 ctrl+x y enter 
 
-# BUAT SCREEN
+# 3 BUAT SCREEN
 
 buat screen untuk memulai mining
 
@@ -49,7 +55,7 @@ screen -S follower
 make run-nockchain-follower
  ```
 
-# JIKA TERJADI ERROR SEPERTI DI BAWAH
+# 4 JIKA TERJADI ERROR SEPERTI DI BAWAH
 
 ![image](https://github.com/user-attachments/assets/0a76cd8a-a48d-4c53-bc15-39760b8d0ef0)
 
@@ -65,7 +71,7 @@ sudo swapon /swapfile
 
 mulai ulang step ke 1
 
-# COMMAND UNTUK CHECK WALLET
+# 5 COMMAND UNTUK CHECK WALLET
 
 ```bash
 nockchain-wallet show-seedphrase
