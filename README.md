@@ -45,6 +45,15 @@ screen -S miner
 make run-nockchain
  ```
 
+atau 
+
+```bash
+screen -S mined
+ ```
+```bash
+nockchain --mining-pubkey <PUBLIC KEY> --mine
+ ```
+
 # 4 JIKA TERJADI ERROR SEPERTI DI BAWAH
 
 ![image](https://github.com/user-attachments/assets/0a76cd8a-a48d-4c53-bc15-39760b8d0ef0)
