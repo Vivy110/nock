@@ -17,14 +17,14 @@ jika phrase,pkey,pubkey tidak terlihat cek step ke 5
 
 # 2 simpan public key dan private key
 
-salin lalu paste public key ke Makefile
+salin lalu paste public key ke .env
 
  ```bash
 cd nock/nockchain 
 ```
 
  ```bash
-nano Makefile
+nano .env
 ```
 
 export MINING_PUBKEY := (Public Key)
