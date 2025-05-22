@@ -35,24 +35,14 @@ ctrl+x y enter
 
 buat screen untuk memulai mining
 
-untuk leader 
+
 
 ```bash
-screen -S leader
+screen -S miner
  ```
 
 ```bash
-make run-nockchain-leader
- ```
-
-untuk follower 
-
-```bash
-screen -S follower
- ```
-
-```bash
-make run-nockchain-follower
+make run-nockchain
  ```
 
 # 4 JIKA TERJADI ERROR SEPERTI DI BAWAH
